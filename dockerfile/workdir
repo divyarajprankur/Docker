@@ -1,0 +1,7 @@
+FROM ubuntu:latest
+
+WORKDIR /tmp
+
+COPY workdir .
+
+CMD ["sleep","3600"]

@@ -1,0 +1,11 @@
+FROM nginx:alpine
+
+LABEL maintainer="Divyaraj Prankur"
+COPY dockerfile1 /root
+#RUN echo '<H1> Hello From Divyaraj<H1>' > /usr/share/nginx/html/index.html
+COPY index.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
+CMD  ["nginx" ,"-g","daemon off;"]
+

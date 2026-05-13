@@ -1,0 +1,5 @@
+FROM ubuntu:latest
+
+COPY dockerfile3 .
+
+CMD ["sleep","3600"]
